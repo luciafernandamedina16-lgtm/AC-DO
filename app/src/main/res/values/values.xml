@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources> 
+        <color name="primary">#1DB954</color>
+    <color name="background">#121212</color>
+    <color name="surface">#121212</color>
+
     <!-- Override default media3 notification icons -->
     <drawable name="media3_notification_play">@drawable/play</drawable>
     <drawable name="media3_notification_pause">@drawable/pause</drawable>
