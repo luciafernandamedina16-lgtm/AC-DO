@@ -1,3 +1,4 @@
+
 name: Build AC-DO
 on: [push]
 jobs:
@@ -10,11 +11,11 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Build APK
+      - name: Build with Gradle
         run: |
           chmod +x ./gradlew
-          ./gradlew assembleDebug
-      - name: Upload
+          ./gradlew assembleDebug -x test --stacktrace
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: AC-DO-App
